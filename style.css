@@ -1,0 +1,72 @@
+/* Basic page styling */
+body {
+  background-color: lightblue;   /* Light blue background */
+  font-family: Cambria, serif;   /* Cambria font */
+  font-size: 14px;               /* 14px font size */
+  text-align: center;            /* Center-aligned content */
+  color: darkblue;               /* Blue text color theme */
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: navy;
+}
+
+/* Scrolling text container */
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: #cfe8fc;
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+.scroll-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollLeft 10s linear infinite;
+  color: blue;
+  margin: 0;
+}
+
+@keyframes scrollLeft {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Blue button with white text */
+.blue-btn {
+  background-color: blue;
+  color: white;
+  font-family: Cambria, serif;
+  font-size: 14px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.blue-btn:hover {
+  background-color: darkblue;
+}
+
+/* Grid box layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.grid-item {
+  background-color: steelblue;
+  color: white;
+  padding: 30px;
+  border-radius: 8px;
+  font-weight: bold;
+}

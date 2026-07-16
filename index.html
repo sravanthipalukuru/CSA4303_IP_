@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to My Website</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Cambria;
+            font-size:14px;
+            text-align:center;
+            background:linear-gradient(to right,#b3e5fc,#e1f5fe,#b2ebf2);
+            min-height:100vh;
+            padding:20px;
+        }
+
+        h1{
+            color:darkblue;
+            margin-bottom:20px;
+            text-shadow:2px 2px 4px white;
+        }
+
+        /* Scrolling Text */
+        .marquee{
+            width:100%;
+            overflow:hidden;
+            background:#1565c0;
+            color:white;
+            padding:12px;
+            border-radius:10px;
+            margin-bottom:30px;
+        }
+
+        .marquee p{
+            display:inline-block;
+            white-space:nowrap;
+            animation:scroll 12s linear infinite;
+            font-weight:bold;
+        }
+
+        @keyframes scroll{
+            from{transform:translateX(100%);}
+            to{transform:translateX(-100%);}
+        }
+
+        /* Grid Layout */
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:20px;
+            max-width:900px;
+            margin:auto;
+        }
+
+        .box{
+            padding:25px;
+            border-radius:12px;
+            font-weight:bold;
+            color:white;
+            box-shadow:0 4px 10px gray;
+            transition:0.3s;
+        }
+
+        .box:hover{
+            transform:scale(1.05);
+        }
+
+        .home{
+            background:#42a5f5;
+        }
+
+        .about{
+            background:#66bb6a;
+        }
+
+        .services{
+            background:#ff7043;
+        }
+
+        .gallery{
+            background:#ab47bc;
+        }
+
+        .contact{
+            background:#26c6da;
+        }
+
+        .feedback{
+            background:#ffa726;
+        }
+
+        button{
+            margin-top:30px;
+            padding:12px 30px;
+            background:#0d47a1;
+            color:white;
+            border:none;
+            border-radius:8px;
+            font-size:14px;
+            font-family:Cambria;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#1976d2;
+        }
+
+        footer{
+            margin-top:30px;
+            color:#003366;
+            font-weight:bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h1>🌐 Welcome to My Website 🌐</h1>
+
+<div class="marquee">
+    <p>✨ Welcome to My Website • Learn HTML • Learn CSS • Enjoy Beautiful Web Design! ✨</p>
+</div>
+
+<div class="grid">
+
+    <div class="box home">
+        🏠<br><br>
+        Home
+    </div>
+
+    <div class="box about">
+        👤<br><br>
+        About
+    </div>
+
+    <div class="box services">
+        🛠<br><br>
+        Services
+    </div>
+
+    <div class="box gallery">
+        🖼<br><br>
+        Gallery
+    </div>
+
+    <div class="box contact">
+        📞<br><br>
+        Contact
+    </div>
+
+    <div class="box feedback">
+        💬<br><br>
+        Feedback
+    </div>
+
+</div>
+
+<button>Click Here</button>
+
+<footer>
+    © 2026 My Website | Designed using HTML & CSS
+</footer>
+
+</body>
+</html>
